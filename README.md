@@ -68,9 +68,9 @@ O projeto segue os seguintes critérios:
 
 ## Próximos passos se tivesse mais tempo
 
--Usar um UUID para cada parágrafo ao invés de usar um new Date();
--Criar algo pra editar os parágrafos existentes;
--E conforme a aplicação ia crescendo, criar um useContext para que os paragrafos são o contexto da aplicação, sendo usado em muitos varios arquivos
+. Usar um UUID para cada parágrafo ao invés de new Date().
+. Criar uma funcionalidade para editar os parágrafos existentes.
+. Conforme a aplicação crescer, criar um useContext para que os parágrafos sejam o contexto da aplicação, sendo utilizados em vários arquivos.
 
 ## 📄 Licença
 
