@@ -25,6 +25,11 @@ const GlobalStyle = createGlobalStyle`
     color: #333;
   }
 
+  p {
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
   button {
     cursor: pointer;
   }

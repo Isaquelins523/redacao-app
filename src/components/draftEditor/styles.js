@@ -10,7 +10,7 @@ export const Container = styled.div`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
-export const Textarea = styled.textarea`
+export const TextArea = styled.textarea`
   width: 100%;
   padding: 10px;
   font-size: 16px;

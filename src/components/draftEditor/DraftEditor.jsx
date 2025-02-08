@@ -1,7 +1,7 @@
 // src/components/DraftEditor/DraftEditor.jsx
 import React, { useState } from "react";
-import * as S from "./styles";
-import Paragraph from "../paragraph/Paragraph.jsx";
+import { Button, TextArea, Container } from "./styles.js";
+import ParagraphList from "../paragraphList/ParagraphList.jsx"; // Importando o novo componente
 
 const DraftEditor = () => {
   const [paragrafos, setParagrafos] = useState([]);
@@ -23,24 +23,19 @@ const DraftEditor = () => {
   };
 
   return (
-    <S.Container>
-      <S.Textarea
+    <Container>
+      <TextArea
         value={texto}
         onChange={(e) => setTexto(e.target.value)}
         placeholder="Digite seu parágrafo aqui..."
         rows="5"
       />
-      <S.Button onClick={handleAdicionarParagrafo}>
-        Adicionar Parágrafo
-      </S.Button>
-      <S.Button onClick={handleSalvarRascunho}>Salvar Rascunho</S.Button>
+      <Button onClick={handleAdicionarParagrafo}>Adicionar Parágrafo</Button>
+      <Button onClick={handleSalvarRascunho}>Salvar Rascunho</Button>
 
-      <div>
-        {paragrafos.map((paragrafo) => (
-          <Paragraph key={paragrafo.id} texto={paragrafo.texto} />
-        ))}
-      </div>
-    </S.Container>
+      {/* Usando o novo componente ParagraphList */}
+      <ParagraphList paragrafos={paragrafos} />
+    </Container>
   );
 };
 
