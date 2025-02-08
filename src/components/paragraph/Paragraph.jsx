@@ -1,7 +1,7 @@
-import * as S from "./styles";
+import React from "react";
 
-function Paragraph({ text }) {
-  return <S.ParagraphText>{text}</S.ParagraphText>;
-}
+const Paragraph = ({ texto }) => {
+  return <p>{texto}</p>;
+};
 
 export default Paragraph;

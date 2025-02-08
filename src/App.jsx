@@ -1,12 +1,18 @@
-import * as S from "./appStyles";
+// src/App.jsx
+import React from "react";
 import DraftEditor from "./components/draftEditor/DraftEditor.jsx";
+import GlobalStyle from "./styles/GlobalStyles.js";
 
-function App() {
+const App = () => {
   return (
-    <S.AppContainer>
-      <DraftEditor />
-    </S.AppContainer>
+    <>
+      <GlobalStyle /> {/* Aplicando os estilos globais */}
+      <div style={{ padding: "20px", maxWidth: "800px", margin: "auto" }}>
+        <h1>Editor de Redação</h1>
+        <DraftEditor />
+      </div>
+    </>
   );
-}
+};
 
 export default App;

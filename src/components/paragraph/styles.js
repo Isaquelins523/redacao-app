@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const ParagraphText = styled.p`
-  border-bottom: none; /* Remove a linha de todos os parágrafos */
+export const Paragraph = styled.p`
+  border-bottom: none;
 
   &:last-of-type {
-    border-bottom: 1px solid #000; /* Aplica a linha no último parágrafo */
+    border-bottom: 1px solid #ddd; /* Aplica a linha no último parágrafo */
   }
 `;

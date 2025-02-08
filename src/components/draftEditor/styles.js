@@ -1,43 +1,34 @@
+// src/components/DraftEditor/styles.js
 import styled from "styled-components";
 
 export const Container = styled.div`
-  padding: 16px;
-  max-width: 600px;
-  margin: auto;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
-export const Title = styled.h2`
-  font-size: 1.25rem;
-  font-weight: bold;
-  margin-bottom: 8px;
-`;
-
-export const TextArea = styled.textarea`
+export const Textarea = styled.textarea`
   width: 100%;
-  padding: 8px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  margin-bottom: 10px;
 `;
 
 export const Button = styled.button`
-  margin-top: 8px;
-  padding: 8px 16px;
-  background-color: #3b82f6;
+  background-color: #4caf50;
   color: white;
+  padding: 10px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
+  margin-right: 10px;
 
   &:hover {
-    background-color: #2563eb;
+    background-color: #45a049;
   }
-`;
-
-export const TextContainer = styled.div`
-  margin-top: 16px;
-`;
-
-export const SubTitle = styled.h3`
-  font-size: 1.125rem;
-  font-weight: 600;
 `;
