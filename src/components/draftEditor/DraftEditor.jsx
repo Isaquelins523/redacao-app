@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Button, TextArea, Container } from "./styles.js";
-import ParagraphList from "../draftPreview/DraftPreview.jsx";
+import { DraftPreview } from "../draftPreview/DraftPreview.jsx";
 
 const DraftEditor = () => {
-  const [paragraph, setParagraphs] = useState([]);
+  const [paragraphs, setParagraphs] = useState([]);
   const [text, setText] = useState("");
 
   const handleAdicionarParagrafo = () => {
@@ -32,7 +32,7 @@ const DraftEditor = () => {
       <Button onClick={handleAdicionarParagrafo}>Adicionar Parágrafo</Button>
       <Button onClick={handleSalvarRascunho}>Salvar Rascunho</Button>
 
-      <ParagraphList paragrafos={paragraph} />
+      <DraftPreview paragraphs={paragraphs} />
     </Container>
   );
 };
