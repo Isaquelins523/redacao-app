@@ -2,6 +2,10 @@
 
 Este projeto é uma aplicação web simples desenvolvida em **React** que simula uma ferramenta de auxílio à redação de textos, permitindo adicionar parágrafos, salvar rascunhos e visualizar o texto completo.
 
+## Link do Deploy
+
+- https://redacao-app.vercel.app/
+
 ## 📝 Funcionalidades
 
 - **Adicionar Parágrafo**: O usuário pode digitar um novo parágrafo e adicioná-lo ao rascunho.
