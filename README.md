@@ -66,11 +66,11 @@ O projeto segue os seguintes critérios:
 - **Estilização com Styled Components**
 - **Responsividade para diferentes tamanhos de tela**
 
-## Próximos passos se tivesse mais tempo
+## Melhorias na Aplicação
 
-. Usar um UUID para cada parágrafo ao invés de new Date().
-. Criar uma funcionalidade para editar os parágrafos existentes.
-. Conforme a aplicação crescer, criar um useContext para que os parágrafos sejam o contexto da aplicação, sendo utilizados em vários arquivos.
+- Usar um UUID para cada parágrafo ao invés de `new Date()`.
+- Criar uma funcionalidade para editar os parágrafos existentes.
+- Conforme a aplicação crescer, criar um `useContext` para que os parágrafos sejam o contexto da aplicação, sendo utilizados em vários arquivos.
 
 ## 📄 Licença
 
