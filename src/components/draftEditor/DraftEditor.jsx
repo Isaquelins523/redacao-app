@@ -6,7 +6,7 @@ const DraftEditor = () => {
   const [paragraphs, setParagraphs] = useState([]);
   const [text, setText] = useState("");
 
-  const handleAdicionarParagrafo = () => {
+  const handleAddParagraph = () => {
     if (text.trim()) {
       const newParagraph = {
         id: Date.now(),
@@ -15,9 +15,10 @@ const DraftEditor = () => {
       setParagraphs((prev) => [...prev, newParagraph]);
       setText("");
     }
+    console.log(paragraphs);
   };
 
-  const handleSalvarRascunho = () => {
+  const handleSavDraft = () => {
     alert("Rascunho salvo com sucesso!");
   };
 
@@ -29,8 +30,8 @@ const DraftEditor = () => {
         placeholder="Digite seu parágrafo aqui..."
         rows="5"
       />
-      <Button onClick={handleAdicionarParagrafo}>Adicionar Parágrafo</Button>
-      <Button onClick={handleSalvarRascunho}>Salvar Rascunho</Button>
+      <Button onClick={handleAddParagraph}>Adicionar Parágrafo</Button>
+      <Button onClick={handleSavDraft}>Salvar Rascunho</Button>
 
       <DraftPreview paragraphs={paragraphs} />
     </Container>
