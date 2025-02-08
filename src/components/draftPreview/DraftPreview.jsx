@@ -1,4 +1,3 @@
-// src/components/ParagraphList/ParagraphList.jsx
 import React from "react";
 import Paragraph from "../paragraph/Paragraph.jsx";
 

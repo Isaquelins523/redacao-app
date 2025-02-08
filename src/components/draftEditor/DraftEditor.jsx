@@ -1,4 +1,3 @@
-// src/components/DraftEditor/DraftEditor.jsx
 import React, { useState } from "react";
 import { Button, TextArea, Container } from "./styles.js";
 import ParagraphList from "../draftPreview/DraftPreview.jsx";

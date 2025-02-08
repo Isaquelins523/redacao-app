@@ -1,4 +1,3 @@
-// src/App.jsx
 import React from "react";
 import DraftEditor from "./components/draftEditor/DraftEditor.jsx";
 import GlobalStyle from "./styles/GlobalStyles.js";
