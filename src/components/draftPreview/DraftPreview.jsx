@@ -1,11 +1,11 @@
 import React from "react";
 import Paragraph from "../paragraph/Paragraph.jsx";
 
-const DraftPreview = ({ paragrafos }) => {
+const DraftPreview = ({ paragraphs }) => {
   return (
     <div>
-      {paragrafos.map((paragrafo) => (
-        <Paragraph key={paragrafo.id} texto={paragrafo.texto} />
+      {paragraphs.map((paragraph) => (
+        <Paragraph key={paragraphs.id} texto={paragraphs.texto} />
       ))}
     </div>
   );

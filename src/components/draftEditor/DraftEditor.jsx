@@ -3,17 +3,17 @@ import { Button, TextArea, Container } from "./styles.js";
 import ParagraphList from "../draftPreview/DraftPreview.jsx";
 
 const DraftEditor = () => {
-  const [paragrafos, setParagrafos] = useState([]);
-  const [texto, setTexto] = useState("");
+  const [paragraph, setParagraphs] = useState([]);
+  const [text, setText] = useState("");
 
   const handleAdicionarParagrafo = () => {
-    if (texto.trim()) {
-      const novoParagrafo = {
+    if (text.trim()) {
+      const newParagraph = {
         id: Date.now(),
-        texto,
+        text,
       };
-      setParagrafos((prev) => [...prev, novoParagrafo]);
-      setTexto("");
+      setParagraphs((prev) => [...prev, newParagraph]);
+      setText("");
     }
   };
 
@@ -24,15 +24,15 @@ const DraftEditor = () => {
   return (
     <Container>
       <TextArea
-        value={texto}
-        onChange={(e) => setTexto(e.target.value)}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
         placeholder="Digite seu parágrafo aqui..."
         rows="5"
       />
       <Button onClick={handleAdicionarParagrafo}>Adicionar Parágrafo</Button>
       <Button onClick={handleSalvarRascunho}>Salvar Rascunho</Button>
 
-      <ParagraphList paragrafos={paragrafos} />
+      <ParagraphList paragrafos={paragraph} />
     </Container>
   );
 };
