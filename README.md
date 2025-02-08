@@ -66,6 +66,12 @@ O projeto segue os seguintes critérios:
 - **Estilização com Styled Components**
 - **Responsividade para diferentes tamanhos de tela**
 
+## Próximos passos se tivesse mais tempo
+
+-Usar um UUID para cada parágrafo ao invés de usar um new Date();
+-Criar algo pra editar os parágrafos existentes;
+-E conforme a aplicação ia crescendo, criar um useContext para que os paragrafos são o contexto da aplicação, sendo usado em muitos varios arquivos
+
 ## 📄 Licença
 
 Este projeto está sob a licença MIT. Sinta-se à vontade para usá-lo e modificá-lo conforme necessário.
