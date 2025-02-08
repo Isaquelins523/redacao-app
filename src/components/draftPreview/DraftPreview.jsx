@@ -1,8 +1,8 @@
 // src/components/ParagraphList/ParagraphList.jsx
 import React from "react";
-import Paragraph from "../paragraph/Paragraph.jsx"; // Importe o componente Paragraph
+import Paragraph from "../paragraph/Paragraph.jsx";
 
-const ParagraphList = ({ paragrafos }) => {
+const DraftPreview = ({ paragrafos }) => {
   return (
     <div>
       {paragrafos.map((paragrafo) => (
@@ -12,4 +12,4 @@ const ParagraphList = ({ paragrafos }) => {
   );
 };
 
-export default ParagraphList;
+export default DraftPreview;

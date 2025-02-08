@@ -6,7 +6,7 @@ import GlobalStyle from "./styles/GlobalStyles.js";
 const App = () => {
   return (
     <>
-      <GlobalStyle /> {/* Aplicando os estilos globais */}
+      <GlobalStyle />
       <div style={{ padding: "20px", maxWidth: "800px", margin: "auto" }}>
         <h1>Editor de Redação</h1>
         <DraftEditor />

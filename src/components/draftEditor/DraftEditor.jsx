@@ -1,7 +1,7 @@
 // src/components/DraftEditor/DraftEditor.jsx
 import React, { useState } from "react";
 import { Button, TextArea, Container } from "./styles.js";
-import ParagraphList from "../paragraphList/ParagraphList.jsx"; // Importando o novo componente
+import ParagraphList from "../draftPreview/DraftPreview.jsx";
 
 const DraftEditor = () => {
   const [paragrafos, setParagrafos] = useState([]);
@@ -33,7 +33,6 @@ const DraftEditor = () => {
       <Button onClick={handleAdicionarParagrafo}>Adicionar Parágrafo</Button>
       <Button onClick={handleSalvarRascunho}>Salvar Rascunho</Button>
 
-      {/* Usando o novo componente ParagraphList */}
       <ParagraphList paragrafos={paragrafos} />
     </Container>
   );

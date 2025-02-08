@@ -5,6 +5,6 @@ export const Paragraph = styled.p`
   margin-bottom: 30px;
 
   &:last-of-type {
-    border-bottom: 1px solid #ddd; /* Aplica a linha no último parágrafo */
+    border-bottom: 1px solid #ddd;
   }
 `;
