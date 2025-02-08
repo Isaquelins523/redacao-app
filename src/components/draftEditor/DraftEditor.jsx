@@ -15,7 +15,6 @@ const DraftEditor = () => {
       setParagraphs((prev) => [...prev, newParagraph]);
       setText("");
     }
-    console.log(paragraphs);
   };
 
   const handleSavDraft = () => {
